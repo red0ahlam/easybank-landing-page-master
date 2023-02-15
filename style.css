@@ -278,30 +278,32 @@ h2 {
     }
 }
 
-.underline,
-.underline--home {
-    position: relative;
-}
+@media (min-width: 800px) {
+    .underline,
+    .underline--home {
+        position: relative;
+    }
 
-.underline::before,
-.underline--home::before {
-    content: '';
-    position: absolute;
-    top: calc(135% + var(--header-vertical-padding));
-    left: 50%;
-    width: 0;
-    height: 5px;
-    transform: translateX(-50%);
-    background-image: linear-gradient(to right, var(--clr-Lime-Green), var(--clr-Bright-Cyan));
-    transition: width 350ms ease-in-out;
-}
+    .underline::before,
+    .underline--home::before {
+        content: '';
+        position: absolute;
+        top: calc(135% + var(--header-vertical-padding));
+        left: 50%;
+        width: 0;
+        height: 5px;
+        transform: translateX(-50%);
+        background-image: linear-gradient(to right, var(--clr-Lime-Green), var(--clr-Bright-Cyan));
+        transition: width 350ms ease-in-out;
+    }
 
-.underline:is(:hover, :focus-visible)::before {
-    width: 115%;
-}
+    .underline:is(:hover, :focus-visible)::before {
+        width: 115%;
+    }
 
-.underline--home:focus-visible::before {
-    width: 115%;
+    .underline--home:focus-visible::before {
+        width: 115%;
+    }
 }
 
 /*----------------header---------------*/
