@@ -66,6 +66,7 @@
 
 @media (min-width: 500px) {
     :root {
+        --fs-800: 2.25rem;
         --fs-900: 3.25rem;
     }
 }
@@ -483,9 +484,15 @@ header {
 /*--------------advantages-section----------*/
 
 .advantages-section {
-    padding: clamp(4em,calc(8vw+1px),7em) 0;
+    padding: 5em 0;
     position: relative;
     z-index: 15;
+}
+
+@media (min-width: 450px) {
+    .advantages-section {
+        padding: 7em 0;
+    }
 }
 
 #advantages-paragraph {
