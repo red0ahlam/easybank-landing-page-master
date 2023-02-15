@@ -90,6 +90,12 @@
         --fs-500: 0.75rem;
         --fs-600: 1rem;
         --fs-700: 1.5rem;
+        --fs-900: 3rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    :root {
         --fs-900: 3.5rem;
     }
 }
